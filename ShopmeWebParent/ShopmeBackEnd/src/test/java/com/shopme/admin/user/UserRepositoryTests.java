@@ -98,4 +98,13 @@ public class UserRepositoryTests {
 		
 		assertThat(user).isNotNull();
 	}*/
+	
+	@Test
+	public void testDeleteUser()
+	{
+		Integer id = 1;
+		Long userId = repo.countById(id);
+		assertThat(userId).isGreaterThan(0);
+		
+	}
 }
